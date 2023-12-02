@@ -1,0 +1,50 @@
+.contact{
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.contact-title h1{
+    font-size: 55px;
+    color: #fff;
+}
+
+.contact-grid{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-box{
+    width: 95%;
+text-align: center;
+}
+
+.contact-box h1{
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 25px;
+   
+}
+
+.contact-box p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1022px) {
+    .contact-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}

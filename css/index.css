@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Syne', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background: #000;
+}
+
+
+
+.navbar-all {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 405;
+    width: 100%;
+    padding-block: 15px;
+    border-bottom: 1px solid #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+
+
+
+
+
+
+.logo {
+    height: 80px;
+    width: 80px;
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo- {
+    height: 180px;
+    width: 180px;
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+.nav-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 200px;
+    z-index: 405;
+    background-color: #fff;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-btns button {
+    border: 2px solid #f2c670;
+    padding: 15px 45px;
+    background-color: transparent;
+}
+
+.nav-btns button a {
+    color: #f2c670;
+}
+
+.nav-items {
+    display: none;
+    /* Hide the navigation items by default */
+    /* Other styles... */
+}
+
+/* Add this class for flex layout */
+.nav-items.show-flex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+   background: #000;
+    width: 100%;
+    color: #f4f6f8;
+}
+
+.nav-links {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* transform: skew(-30deg); */
+    height: 90vh;
+}
+
+.nav-links a {
+    padding-block: 20px;
+    width: 100%;
+    text-align: center;
+    color: #f4f6f8;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: xx-large;
+}
+
+
+
+.nav-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 20px;
+}
+
+.nav-btns a {
+    padding-bottom: 30px;
+    color: #f4f6f8;
+
+}
+
+
+.nav-btns button {
+    background-color: #fff;
+}
+
+
+
+.navbar-all {
+    display: flex;
+    justify-content: space-between;
+   background: #000;
+}
+
+.navbar-all i {
+    color: #f2f2f2;
+}
+
+#toggleButton {
+    display: block;
+    border: none;
+    padding: 10px 25px;
+    font-size: 2.0rem;
+    color: #f4f6f8;
+    background-color: transparent;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+#toggleButton i {
+    color: #f2f2f2;
+}
+
+
+.packages {
+    margin: 0 5%;
+    margin-top: 50px;
+    padding-block: 50px;
+    border: 5px solid #fff;
+}
+
+.package-title {
+    text-align: center;
+    color: #fff;
+}
+
+.package-title h1 {
+    text-transform: uppercase;
+
+    font-size: 55px;
+
+}
+
+.ticket-number {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-number a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+
+.package-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.package-card {
+    margin-top: 30px;
+    width: 95%;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border: 4px solid #fff;
+    transition: 0.5s ease;
+}
+
+
+
+.package-card:hover {
+color: #f2ae22;
+    box-shadow: 0 0 40px #f2ae22;
+}
+
+.package-price {
+    margin-block: 20px;
+}
+
+.package-purchase button {
+    padding: 15px 45px;
+    margin-block: 20px;
+    background-color: #f2ae22;
+    border: none;
+}
+
+.package-purchase a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.package-type h1 {
+    font-size: 40px;
+}
+
+.package-price h1 {
+    font-size: 40px;
+}
+
+.media {
+    padding: 0 5%;
+    margin-top: 20px;
+}
+
+.media a {
+    font-size: 25px;
+    padding-right: 1%;
+    color: #fff;
+}
+
+.media a:hover {
+    color: rgb(2, 0, 36);
+    color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.tickettt {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.ticket-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+   font-weight: 500;
+    background-color: #f2ae22;
+}
+
+.nat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.package-title h1 span {
+    color: red;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.package-grid a{
+    text-decoration: none;
+    color: #fff;
+}
+@media only screen and (max-width: 1022px) {
+    .package-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .package-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 822px) {
+    .package-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .package-title h1 {
+        font-size: 35px;
+    }
+
+    .ticket-number {
+        flex-direction: column;
+    }
+
+    .ticket-number a {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.about{
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.about h1{
+    font-size: 35px;
+    color: #fff;
+}
+
+.about p{
+    color: #fff;
+}
+
+.about-text{
+    margin-bottom: 25px;
+}
+
+.about h2{
+    font-family: 'Bebas Neue', sans-serif;
+        font-size: 55px;
+        color: #fff;
+}
+
+.media{
+    padding: 0 10%;
+    margin-top: 25px;
+}
